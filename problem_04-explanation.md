@@ -8,5 +8,5 @@ Implement a quick sort algorithm:
 - for each index, if it's a 0, swap the element with the element at the start value, or if it's a 2 with the lement at he end value
 
 ## Time and Space Complexity
-Time Complexity: **O(n)** - The array is only traversed once, so time only increases linearly with the size of the array
-Space Complexity: **O(1)** - The array is traversed in place, no extra data structures required.
+- Time Complexity: **O(n)** - The array is only traversed once, so time only increases linearly with the size of the array
+- Space Complexity: **O(1)** - The array is traversed in place, no extra data structures required.

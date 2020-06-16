@@ -8,8 +8,8 @@ Create a Trie that holds all the strings:
 
 ## Time and Space Complexity
 Time Complexity: 
-**O(n)** - where n is the number of characters in the word.
-**O(mn)** - for m words
+- **O(n)** - where n is the number of characters in the word.
+- **O(mn)** - for m words
 
 Space Complexity: 
 **O(mn)** - worst case scenario is having m words with n letters, where no word shares letters with another word
