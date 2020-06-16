@@ -15,6 +15,8 @@ def rotated_array_search(input_list, number):
 
     return rotated_array_search_recursive(input_list, number, 0)
 
+# Recursive method that finds the index of a target 
+# by using Divide and Conquer to successively split the array into equal parts and compare the middle element with the target
 def rotated_array_search_recursive(arr, target, left):
     mid = (len(arr) - 1) // 2
     elem = arr[mid]
@@ -37,6 +39,7 @@ def rotated_array_search_recursive(arr, target, left):
         return rotated_array_search_recursive(arr[:mid], target, left)
 
 
+# Test functions
 def linear_search(input_list, number):
     for index, element in enumerate(input_list):
         if element == number:
