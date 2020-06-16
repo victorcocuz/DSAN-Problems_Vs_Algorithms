@@ -1,3 +1,16 @@
+# A RouteTrieNode will be similar to our autocomplete TrieNode... with one additional element, a handler.
+class RouteTrieNode:
+    def __init__(self):
+        # Initialize the node with children as before, plus a handler
+        self.children = {}
+        self.handler = None
+
+    def insert(self, entry):
+        # Insert the node as before
+        self.children[entry] = RouteTrieNode()
+        return self.children[entry]
+        
+
 # A RouteTrie will store our routes and their associated handlers
 class RouteTrie:
     def __init__(self):
@@ -25,19 +38,6 @@ class RouteTrie:
                 return
             current_node = current_node.children[entry]
         return current_node.handler
-
-
-# A RouteTrieNode will be similar to our autocomplete TrieNode... with one additional element, a handler.
-class RouteTrieNode:
-    def __init__(self):
-        # Initialize the node with children as before, plus a handler
-        self.children = {}
-        self.handler = None
-
-    def insert(self, entry):
-        # Insert the node as before
-        self.children[entry] = RouteTrieNode()
-        return self.children[entry]
 
 
 # The Router class will wrap the Trie and handle
